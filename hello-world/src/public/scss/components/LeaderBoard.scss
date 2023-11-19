@@ -1,0 +1,74 @@
+.leaderboard {
+  margin-top: 50px;
+  &--title {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  &--content {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  &--item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 11px;
+    background-color: white;
+    margin: 0px 10px;
+    
+    &:first-child {
+      border-radius: 10px 10px 0px 0px;
+      overflow: hidden;
+    }
+    &:last-child {
+      border-radius: 0px 0px 10px 10px;
+      overflow: hidden;
+    }
+    &__infor {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px 10px;
+      .first {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        .avatar {
+          width: 50px;
+          height: 50px;
+          background-color: #596f93;
+          border-radius: 50%;
+        }
+      }
+    }
+    &__result {
+      background-color: #7a8ca9;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      padding: 10px 10px;
+
+      .result--item {
+        background-color: white;
+        border-radius: 15px;
+        padding: 5px 10px 5px 40px;
+        text-align: end;
+        font-weight: bold;
+      }
+    }
+    &.active {
+      background-color: #24375a;
+      width: 100%;
+      color: white;
+      margin: 0;
+      border-radius: 10px;
+      .leaderboard--item__result {
+        background-color: unset;
+        color: black;
+      }
+    }
+  }
+}

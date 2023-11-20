@@ -6,6 +6,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 5px;
     color: white;
     &--title {
       font-size: 28px;
@@ -13,12 +14,19 @@
     }
   }
   .note {
-    padding: 10px;
+
     text-align: center;
     p {
       span {
         font-weight: bold;
       }
     }
+  }
+}
+
+@media (max-width: 525px) {
+  .container{
+    width: 100%;
+    overflow-x: hidden;
   }
 }

@@ -26,7 +26,7 @@ export default {
             dataLeaderBoard: [
                 {
                     id: 1,
-                    name: 'Thewalter129',
+                    name: 'Thewalter1',
                     order: 2,
                     numberWin: 36,
                     minutePlay: 9.32

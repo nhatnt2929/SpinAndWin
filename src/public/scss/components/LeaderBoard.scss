@@ -16,7 +16,7 @@
     font-size: 11px;
     background-color: white;
     margin: 0px 10px;
-    
+
     &:first-child {
       border-radius: 10px 10px 0px 0px;
       overflow: hidden;
@@ -41,6 +41,7 @@
           height: 50px;
           background-color: #596f93;
           border-radius: 50%;
+          
         }
       }
     }
@@ -49,7 +50,7 @@
       display: flex;
       flex-direction: column;
       gap: 5px;
-      padding: 10px 10px;
+      padding: 11px 10px;
 
       .result--item {
         background-color: white;
@@ -68,6 +69,49 @@
       .leaderboard--item__result {
         background-color: unset;
         color: black;
+      }
+    }
+  }
+}
+
+@media (max-width: 525px) {
+  .leaderboard {
+    &--item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 11px;
+      background-color: white;
+      margin: 0px 0px;
+
+      &:first-child {
+        border-radius: 10px 10px 0px 0px;
+        overflow: hidden;
+      }
+      &:last-child {
+        border-radius: 0px 0px 10px 10px;
+        overflow: hidden;
+      }
+      &__infor {
+        justify-content: space-around;
+        padding: 10px 10px;
+        // flex-wrap: wrap;
+        .first {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 10px;
+          .avatar {
+            width: 50px;
+            height: 50px;
+            background-color: #596f93;
+            border-radius: 50%;
+          }
+        }
+      }
+      &__result {
+        justify-content: center;
+        height: 75px;
       }
     }
   }

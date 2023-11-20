@@ -36,7 +36,7 @@
   .image-win {
     position: absolute;
     bottom: 85%;
-    width: 80%;
+    width: 34%;
   }
 
   .button-main {
@@ -58,4 +58,14 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9;
+}
+
+@media (max-width:525px) {
+  .popup-content {
+    .image-win {
+      position: absolute;
+      bottom: 85%;
+      width: 80%;
+    }
+  }
 }
